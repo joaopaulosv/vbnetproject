@@ -9,6 +9,7 @@ namespace MeuTodo.Data
 
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseMySQL(connectionString: "DataSource=app.db;Cache=Shared");
+            => optionsBuilder.UseMySQL(connectionString:"DataSource=app.db;Cache=Shared");
+        
     }
 }
