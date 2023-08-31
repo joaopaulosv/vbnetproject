@@ -19,6 +19,33 @@
     <Content Update="appsettings.Development.json">
       <DependentUpon>Program.cs</DependentUpon>
     </Content>
+    <Content Remove="ViewModels\**" />
   </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Compile Remove="ViewModels\**" />
+    <Compile Remove="Migrations\20230830121310_AddedTime.cs" />
+    <Compile Remove="Migrations\20230830121310_AddedTime.Designer.cs" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ViewModels\**" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <None Remove="ViewModels\**" />
+  </ItemGroup>
+
+
+
+
+
+
 
 </Project>

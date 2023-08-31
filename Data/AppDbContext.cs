@@ -9,7 +9,7 @@ namespace MeuTodo.Data
 
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseMySQL(connectionString:"DataSource=app.db");
+            => optionsBuilder.UseMySQL("server=localhost;database=api;user=root;password=123");
         
     }
 }
